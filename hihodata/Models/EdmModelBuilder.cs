@@ -13,6 +13,7 @@ namespace AlvaChien.HIH.OData.Models
             {
                 var builder = new ODataConventionModelBuilder();
                 builder.EntitySet<Movie>("Movies");
+                builder.EntitySet<DBVersion>("DBVersion");
                 _edmModel = builder.GetEdmModel();
             }
 
