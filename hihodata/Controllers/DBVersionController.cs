@@ -16,7 +16,8 @@ namespace hihodata.Controllers
         [EnableQuery(PageSize = 10, MaxExpansionDepth = 2)]
         public IActionResult Get()
         {
-            return Ok(context.Customers);
+            //return Ok(context.Customers);
+            return NoContent();
         }
 
         public async Task<IActionResult> Post([FromBody] DBVersion nver)
